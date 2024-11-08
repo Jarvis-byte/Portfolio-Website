@@ -23,7 +23,7 @@ const PhoneMockup = () => {
   }, [contentRef, containerRef]);
 
   return (
-    <div className="relative w-[280px] h-[580px] mx-auto mt-8 mb-12">
+    <div className="relative w-[310px] h-[590px] mx-auto mt-8 mb-12"> {/* Slightly increased width */}
       {/* Phone Frame */}
       <div className="absolute inset-0 bg-gray-800 rounded-[3rem] border-4 border-gray-700 shadow-xl">
         {/* Screen */}
@@ -36,10 +36,14 @@ const PhoneMockup = () => {
 
           {/* Scrolling Content Section */}
           <div ref={containerRef} className="p-6 overflow-hidden h-full relative">
-            <div ref={contentRef} className={`${shouldScroll ? 'animate-slow-scroll' : ''} space-y-4`}>
+            <div
+              ref={contentRef}
+              className={`${shouldScroll ? 'animate-slow-scroll' : ''} space-y-4`}
+              style={{ minHeight: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+            >
               <h1
                 className="font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
-                style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)' }}
+                style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', whiteSpace: 'normal', wordWrap: 'break-word' }}
               >
                 Hi! I'm <span className="text-white text-[1.2em]">Arka</span>, a software developer with a knack for Android magic!
               </h1>
