@@ -56,7 +56,7 @@ const Projects = () => {
           const LogoIcon = project.logo; // Get the icon component
           return (
             <div key={index} 
-                 className="bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all w-full">
+                 className="bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all w-full mb-12 lg:mb-0">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-semibold">{project.title}</h3>
                 <div className="flex gap-4">

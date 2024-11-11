@@ -5,7 +5,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import FoldablePhoneMockup from './components/PhoneMockup';
+import Blog from './components/Blog';
+import PhoneMockup from './components/PhoneMockup';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <main className="container mx-auto px-4 py-8">
         <section className="min-h-screen flex flex-col justify-center items-center text-center">
            
-          <FoldablePhoneMockup />
+          <PhoneMockup />
           
           <div className="flex gap-6">
             <a 
@@ -64,6 +65,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <Blog />
         <Education />
       </main>
 

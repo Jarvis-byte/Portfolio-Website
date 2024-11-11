@@ -3,7 +3,7 @@ import { Code2, Database, Cloud } from 'lucide-react';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills">
       <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
       
       <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
